@@ -8,6 +8,8 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+
+
 .navbar {
   display: flex;
   background-color: rgb(23, 54, 100);
@@ -25,6 +27,12 @@ body {
   margin: auto;
   margin-left: 15px;
   justify-content: left;
+}
+
+.navbar--journal {
+  color: white;
+  display: flex;
+  text-decoration-line: none;
 }
 
 .navbar--options {
@@ -59,4 +67,29 @@ body {
 
 .homepage--photo--app {
   padding-left: 7%;
+}
+
+.entry {
+  margin-left: 50px;
+  background-color: rgb(39,35,35);
+  width: 50%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.entry--landmark {
+  padding-top: 27px;
+  color:rgb(41, 91, 167)
+}
+
+.entry--dates {
+  display: inline-flex;
+}
+
+.entry--dates--start {
+  padding-right: 5px;
+}
+
+.entry--text {
+  padding-left: 50px;
 }
