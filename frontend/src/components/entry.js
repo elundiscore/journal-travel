@@ -8,7 +8,7 @@ export default function Entry({ entry }) {
                 <p className="entry--country">{entry.country}</p>
                     <span className="entry--dates">
                         <p className="entry--dates--start">{entry.datestart}</p>
-                        <p className="entry--dates--end">{entry.dateend}</p>
+                        <p className="entry--dates--end">- {entry.dateend}</p>
                     </span>
                 <p className="entry--description">{entry.description}</p>
             </div>

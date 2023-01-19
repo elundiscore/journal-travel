@@ -1,5 +1,6 @@
 import { useEffect, UseEffect, useState } from 'react'
 import Entry from "../components/entry.js"
+import Form from "../components/entryForm.js"
 
 export default function Journal() {
     const [entrys, setEntrys] = useState(null)
@@ -19,9 +20,12 @@ export default function Journal() {
 
     return (
         <div>
-            {entrys && entrys.map((entry) => (
-                <Entry key={entry._id} entry={entry} />
-            ))}
+            <div className="journals">
+                {entrys && entrys.map((entry) => (
+                    <Entry key={entry._id} entry={entry} />
+                ))}
+                <Form />
+            </div>
         </div>
     )
 }
